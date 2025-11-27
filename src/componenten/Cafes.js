@@ -35,10 +35,8 @@ function Cafe({cafe,favorites,setFavorites}) {
         setFavorites([...favorites.filter(f => f !== id), id])
     }
 
-    function removeFavorite() {
-        setFavorites([...favorites.filter(f => f !== cafe.id)])
-    }
-    return <div onClick={() => isFavorite(cafe.id) ? removeFavorite(cafe.id) : addFavorite(cafe.id)} className='nofavorit'>
+    //toevoegen aan favorieten als het er nog geen favoriet is
+    return <div onClick={() => !isFavorite(cafe.id) && addFavorite(cafe.id) } className='nofavorit'>
         <div>{cafe.id}</div>
         <div>{cafe.naam}</div>
         <div>{cafe.locatie}</div>
