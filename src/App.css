@@ -1,3 +1,4 @@
+/*
 .App {
   text-align: center;
 }
@@ -36,3 +37,35 @@
     transform: rotate(360deg);
   }
 }
+*/
+
+.nofavorit, .favorit{
+    background-color: lightblue;
+    width: 120px;
+    float: left;
+    margin: 2vw;
+    border-radius: 4px;
+    text-align: center;
+    height: 70px;
+    border-style: solid;
+    border-width:2px;
+}
+
+.favorit{
+    background-color: lightgreen;
+}
+
+img{
+    margin: 10px;
+}
+
+h2, h3{
+    width:150px;
+}
+
+
+
+
+
+
+
