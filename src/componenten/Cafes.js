@@ -5,7 +5,7 @@ export function Cafes({data,title}) {
     const [favorites, setFavorites] = useState([]);
 
     return <Section title={title}>
-        {data.map((c, index) => <Cafe cafe={c} key={c.id} favorites={favorites} setFavorites={setFavorites}/>)}
+        {data.map((c) => <Cafe cafe={c} key={c.id} favorites={favorites} setFavorites={setFavorites}/>)}
         <h3>Mijn favorieten</h3>
         {favorites.map((f,index)=><Favorite favorite={data.find(o=>o.id ===f)} key={index} favorites={favorites} setFavorites={setFavorites}/>)}
     </Section>
@@ -14,7 +14,7 @@ export function Cafes({data,title}) {
 function Favorite(props) {
     const {favorite,favorites,setFavorites}=props
 
-    function removeFavorite(id) {
+    function removeFavorite() {
         setFavorites([...favorites.filter(f => f !== favorite.id)])
     }
 
@@ -27,7 +27,7 @@ function Favorite(props) {
 
 function Cafe({cafe,favorites,setFavorites}) {
 
-    function isFavorite(i) {
+    function isFavorite() {
         return favorites.some(f => f === cafe.id);
     }
 
@@ -35,7 +35,7 @@ function Cafe({cafe,favorites,setFavorites}) {
         setFavorites([...favorites.filter(f => f !== id), id])
     }
 
-    function removeFavorite(id) {
+    function removeFavorite() {
         setFavorites([...favorites.filter(f => f !== cafe.id)])
     }
     return <div onClick={() => isFavorite(cafe.id) ? removeFavorite(cafe.id) : addFavorite(cafe.id)} className='nofavorit'>

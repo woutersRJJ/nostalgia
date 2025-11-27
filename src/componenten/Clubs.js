@@ -13,7 +13,7 @@ export function Clubs({title}) {
 function Club(props) {
     const {club, favorites, setFavorites} = props
 
-    function isFavorite(i) {
+    function isFavorite() {
         return favorites.some(f => f === club.id);
     }
 
@@ -21,7 +21,7 @@ function Club(props) {
         setFavorites([...favorites.filter(f => f !== id), id])
     }
 
-    function removeFavorite(id) {
+    function removeFavorite() {
         setFavorites([...favorites.filter(f => f !== club.id)])
     }
 
