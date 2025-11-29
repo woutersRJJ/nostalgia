@@ -1,16 +1,18 @@
 import './App.css';
 import {Frituren} from "./componenten/Frituren";
-import {Clubs} from "./componenten/Clubs";
+import {Discotheken} from "./componenten/Discotheken";
 import {Cafes} from "./componenten/Cafes";
-import {CAFES_DATA} from "./data/data";
+import {CAFES_DATA, VOETBALPLOEGEN_DATA} from "./data/data";
+import {Voetbalploegen} from "./componenten/Voetbalploegen";
 
 function App() {
     return (
         <div className="App">
             <h1>State and events</h1>
             <Frituren title='Frituren'/>
-            <Clubs title='Clubs'/>
+            <Discotheken title='Discotheken'/>
             <Cafes title='Cafés' data={CAFES_DATA} />
+            <Voetbalploegen title='Voetbalploegen' data={VOETBALPLOEGEN_DATA}/>
         </div>
     );
 }

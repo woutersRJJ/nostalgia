@@ -39,6 +39,18 @@
 }
 */
 
+.ploeg{
+    background-color: lightblue;
+    width: 160px;
+    float: left;
+    margin: 2vw;
+    border-radius: 4px;
+    text-align: center;
+    height: 200px;
+    border-style: solid;
+    border-width:2px;
+}
+
 .nofavorit, .favorit{
     background-color: lightblue;
     width: 120px;
@@ -59,9 +71,20 @@ img{
     margin: 10px;
 }
 
-h2, h3{
+h2{
     width:150px;
 }
+
+h3{
+    width:250px;
+}
+
+.personWithButtons {
+    display: flex;
+    justify-content:center;
+    width:100%;
+}
+
 
 
 
