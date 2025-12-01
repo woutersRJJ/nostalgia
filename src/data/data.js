@@ -62,11 +62,7 @@ export const VOETBALPLOEGEN_DATA = [
     {
         naam: 'Lyra-Lierse',
         stamnummer: '7776',
-        kleuren: ['geel', 'zwart'],
-       /* spelers: [
-            {id: 1, 'naam': 'a'},
-            {id: 2, 'naam': 'b'}
-        ]*/
+        kleuren: ['geel', 'zwart']
     },
     {
         naam: 'Rita Berlaar',
@@ -82,10 +78,6 @@ export const VOETBALPLOEGEN_DATA = [
         id: 6,
         naam: 'KSK Heist',
         stamnummer: '2948',
-        kleuren: ['paars', 'wit'],
-        spelers: [
-            {id: 1, 'naam': 'a'},
-            {id: 2, 'naam': 'b'}
-        ]
+        kleuren: ['paars', 'wit']
     }
 ]
