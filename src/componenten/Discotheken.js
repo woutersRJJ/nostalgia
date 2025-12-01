@@ -26,7 +26,7 @@ function Discotheek(props) {
     }
 
     return <div onClick={() => isFavorite(discotheek.id) ? removeFavorite(discotheek.id) : addFavorite(discotheek.id)} className={isFavorite(discotheek.id)?"favorit":"nofavorit"}>
-        <div>{discotheek.naam}</div>
+        <div style={{'marginTop':'10px'}}>{discotheek.naam}</div>
         <div>{discotheek.locatie}</div>
     </div>
 }

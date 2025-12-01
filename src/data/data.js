@@ -19,44 +19,73 @@ export const CAFES_DATA = [
     {id: 1, naam: 'Den Oost', locatie: 'Duffel'},
     {id: 2, naam: 'Wilgenhof', locatie: 'Duffel'},
     {id: 3, naam: 'De Komeet', locatie: 'Lier'}
-    /* {id : 4 ,naam: "Beethoven", locatie: 'Mechelen'},
-     {id : 5 ,naam: "Ronnie's place", locatie: 'Antwerpen'}*/
 ]
 
 export const VOETBALPLOEGEN_DATA = [
     {
-        id: 1,
         naam: 'SC Duffel',
         stamnummer: '9735',
         kleuren: ['rood', 'geel'],
-        spelers: ['Raveschot', 'Vloeberghs', 'Pouillon', 'Nauwelaerts', 'Van De Put', 'Struyf']
+        spelers: [
+            {id: 1, naam: 'Raveschot'},
+            {id: 2, naam: 'Vloeberghs'},
+            {id: 3, naam: 'Pouillon'},
+            {id: 4, naam: 'Nauwelaerts'},
+            {id: 5, naam: 'Van De Put'},
+            {id: 6, naam: 'Struyf'}
+        ]
     },
     {
-        id: 2,
         naam: 'VV Duffel',
         stamnummer: '6461',
         kleuren: ['geel', 'zwart'],
-        spelers: ['Beerens', 'Schellekens']
+        spelers: [
+            {id: 1, 'naam': 'Beerens'},
+            {id: 2, 'naam': 'Schellekens'}
+        ]
     },
     {
-        id: 3,
         naam: 'Club Brugge',
         stamnummer: '3',
         kleuren: ['blauw', 'zwart'],
-        spelers: ['Vanaken','Tzolis','Vermant', 'Seys', 'Sabbe', 'Romero', 'Ordóñez','Onyedika']
+        spelers: [
+            {id: 1, 'naam': 'Tzolis'},
+            {id: 2, 'naam': 'Vanaken'},
+            {id: 3, 'naam': 'Vermant'},
+            {id: 4, 'naam': 'Seys'},
+            {id: 5, 'naam': 'Sabbe'},
+            {id: 6, 'naam': 'Romero'},
+            {id: 7, 'naam': 'Ordóñez'},
+            {id: 8, 'naam': 'Onyedika'}
+        ]
     },
     {
-        id: 4,
         naam: 'Lyra-Lierse',
         stamnummer: '7776',
-        kleuren: ['geel', 'zwart']
+        kleuren: ['geel', 'zwart'],
+       /* spelers: [
+            {id: 1, 'naam': 'a'},
+            {id: 2, 'naam': 'b'}
+        ]*/
     },
     {
-        id: 5,
         naam: 'Rita Berlaar',
         stamnummer: '9375',
         kleuren: ['groen', 'rood'],
-        spelers: ['Verwimp', 'Debakker', 'Zaanstra']
+        spelers: [
+            {id: 1, 'naam': 'Verwimp'},
+            {id: 2, 'naam': 'Debakker'},
+            {id: 3, 'naam': 'Zaanstra'}
+        ]
     },
-    {id: 6, naam: 'KSK Heist', stamnummer: '7776', kleuren: ['paars', 'wit']}
+    {
+        id: 6,
+        naam: 'KSK Heist',
+        stamnummer: '2948',
+        kleuren: ['paars', 'wit'],
+        spelers: [
+            {id: 1, 'naam': 'a'},
+            {id: 2, 'naam': 'b'}
+        ]
+    }
 ]

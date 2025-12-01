@@ -19,8 +19,7 @@ function Favorite(props) {
     }
 
     return <div onClick={()=>removeFavorite(favorite.id)} className='favorit'>
-        <div>{favorite.id}</div>
-        <div>{favorite.naam}</div>
+        <div style={{'marginTop':'10px'}}>{favorite.naam}</div>
         <div>{favorite.locatie}</div>
     </div>
 }
@@ -37,8 +36,8 @@ function Cafe({cafe,favorites,setFavorites}) {
 
     //toevoegen aan favorieten als het er nog geen favoriet is
     return <div onClick={() => !isFavorite(cafe.id) && addFavorite(cafe.id) } className='nofavorit'>
-        <div>{cafe.id}</div>
-        <div>{cafe.naam}</div>
+
+        <div style={{'marginTop':'10px'}}>{cafe.naam}</div>
         <div>{cafe.locatie}</div>
     </div>
 }

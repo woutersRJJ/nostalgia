@@ -12,7 +12,7 @@ export function Frituren(props) {
 function Frituur({frituur}) {
 
     return <div className='nofavorit'>
-        <div>{frituur.naam}</div>
+        <div style={{'marginTop':'10px'}}>{frituur.naam}</div>
         <div>{frituur.locatie}</div>
     </div>
 }
